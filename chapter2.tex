@@ -1,0 +1,340 @@
+\chapter{字，行，段的格式化}
+在上一章中，我们安装了LaTeX和TEXworks的编辑器来编写我们的
+第一个文档。现在，我们将谈论的文档结构，我们
+将重点放在文本的细节和它的格式。
+
+在这一章中，我们将:
+\begin{itemize}
+	\item 探讨关于逻辑格式化
+	\item 学习如何更改字体，文本的形状和风格
+	\item 使用box来限制文档的宽度
+	\item 学习如何断行和提高断字
+	\item 探索对齐和格式化段落
+\end{itemize}
+
+过工作的例子，并尝试新的功能，我们将学习一些基本概念
+乳胶。通过本章的结束，我们将命令和环境的熟悉。
+你甚至可以定义自己的命令。
+	\section{理解逻辑格式化}
+在前面的章节中，我们写了一个小例子文件。让我们扩展它使得它变成一个具有
+说明性的例子，以了解典型的文档结构。
+		\subsection{Time for action-titling your document}
+我们将使用第一个例子，插入一些命令使其产生一个漂亮的title。
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass[a4paper,11pt]{article}
+\begin{document}
+\title{Example 2}
+\author{My name}
+\date{January 5, 2011}
+\maketitle
+\section{What's this?}
+This is our second document. It contains a title and a section
+with text.
+\end{document}
+\end{lstlisting}
+\begin{itemize}
+	\item 我们的文档使用article类。它将使用a4纸和11号基本字体。
+	\item 标题是"Example 2".
+	\item 你是作者。
+	\item 时间是January 5, 2011
+	\item concerning the content of the document:
+		\begin{itemize}
+			\item 开始与标题。
+			\item 第一section具有标题"What's this?"
+			\item 接下来的文本是"This is our second document."
+		\end{itemize}
+\end{itemize}
+注意，我们并没有设置标题的字体大小；页眉有设置加粗和居中。这类的格式化是LaTeX
+做的，但是你可以告诉LaTeX具体看起来效果如何。
+		\subsection{探索文档结构}
+让我们看看细节。一个LaTeX文档中并不是孤立的-通常是基于一个
+多功能的模板。这类基本的模板被称为类(class)。它提供了可定制的
+功能，通常是具有特定的目的性。有些类中有书(book),期刊文章
+(journal articles);信件(letter)，演示文档(presentation),海报
+(poster)和其他很多;还有更多的数百个可靠的类可以在互联网存档,
+在你已经安装了TeX Live之后,在您的计算机上也有很多，在这里，我们
+选择了适用于小型文档的文章(article)类别。
+
+第一行用\textbackslash documentclass开始。这个单词之前有反斜杠；这样的单词称为
+命令(command)。我们使用命令制定类(class)和文档属性(document properties):
+title,author和date.
+
+文档的第一布冯称为文档的前言(preamble)。我们在这里选择类，指定属性，
+一般地，在这里制作整个文档范围的定义。
+
+\textbackslash begin\{document\}标记了前言的结束和真正文档的开始.\textbackslash end\{document\}标记了文档的结束。所有之后的东西都将被LaTeX忽略。在\textbackslash begin...\textbackslash end之间的这样一段代码，被称作环境(environment)。
+
+在实际的文档中间，我们使用了\textbackslash maketitle来以一种美观的格式输出标题，作者和日期。
+使用\textbackslash section命令，我们制作了一个比正常文字大且粗的标题。接着是一些文字，
+在文档环境中的将被输出。相反的，前言从来不产生任何输出。
+
+让我们仔细看一下这些命令。
+
+		\subsection{理解LaTeX命令}
+LaTeX命令以反斜杠开始，跟着是一串大写或小写字母。LaTeX命令通常使用一种
+描述性的小写字符串命名。当然也有例外:你将会看到有些命令只有反斜杠和一个特殊
+字符组成。
+
+命令也可以有参数,含在大括号或方括号中。
+
+调用命令格式如下:
+
+\textbackslash command
+
+或者:
+
+\textbackslash command\{argument\}
+
+或者:
+
+\textbackslash command\[optionan argument\]\{argument\}
+
+参数可以有多个，每个在大括号或方括号内。在大括号中的参数是必需的。如果一个
+命令被定义为需要一个参数，那么就必须提供一个。例如，如果我们没有声明一个类名,
+调用\textbackslash documentclass将是徒劳的，
+
+%这些内容是大括号中的
+方括号中的参数是可选的，如果不指定的话，会使用默认设置，例如\textbackslash documentclass\{article\}.
+这份文档将使用10pt字体，因为这是这个类的默认值。
+\textbackslash documentclass\[a4paper,11pt\]\{article\}将使用指定的属性。
+有些命令是产生输出的-例如\textbackslash LaTeX 而有些命令是设置属性，更改字体，
+或者布局的。通常，命令是根据目的来命名的。我们将在这一章中探究其细节，但是
+这里先让我们看看LaTeX是如何处理我们输入的。
+	\section{LaTeX如何读取你的输入}
+在我们继续之前，让我们来看看如何LaTeX的理解你写在编辑器中的东西。
+%此处有省略
+	\section{输出特殊符号}
+常见的文本大多含有大写和小写字母,数字和标点符号.这些只要简单的输入即可。
+然而，一些字符是保留作为LaTeX的命令;它们不能被直接使用.我们已经遇到了
+这样的字符，除了百分号,还有花括号等。有LaTeX命令来打印这样的符号。
+Statement \#1:
+50\% of \$100 makes \$50.
+More special symbols are \&, \_, \{ and \}.
+\textbackslash textbackslash用来输出反斜杠。\textbackslash\textbackslash
+作为断行的shortcut。这有点奇怪，这是由于文章中经常需要断行而很少需要
+反斜杠，所以使用了缩略命令。
+%这里又省略了一点。。。
+\section{格式化文本-字体形状和风格}
+	\subsection{调整字体形状}
+	\textbackslash emph 斜体
+	\textbackslash textit 意大利斜体
+	\textbackslash textbf 粗體
+	\textbackslash textsl slanted
+	\textbackslash textsc small caps
+这些可以组合起来使用，例如 \textbackslash textsc\{\textbackslash textbf\{nested\}\}
+也可以重复使用，例如\textbackslash textbf\{\textbackslash textbf\{nested\}\}
+%又省略一点。。。
+	\subsection{选择font family}
+	\textbackslash textsf : sans-serif font
+	\textbackslash texttt : typewriter font
+	\textbackslash textrm : Roman text - the default font with serifs.
+\textbackslash textsf\{LaTeX\ resources on the internet\}
+\textbackslash texttt\{http://www.ctan.org\}.
+\textsf{LaTeX\ resources on the internet}
+The best place for downloading LaTeX related software is CTAN.
+Its address is \texttt{http://www.ctan.org}.
+	\subsection{字体切换}
+	\textbackslash sffamily
+	\textbackslash rmfamily
+	Command		Declaration		Meaning
+	\textbackslash textrm\{\}	\textbackslash rmfamily
+	\textbackslash textsf\{\}
+	\textbackslash texttt\{\}
+	\textbackslash textbf\{\}
+	\textbackslash textmd\{\}
+	\textbackslash textit\{\}
+	\textbackslash textsl\{\}
+	\textbackslash textsc\{\}
+	\textbackslash textup\{\}
+	\textbackslash textnormal\{\}
+	\subsection{Using environments}
+	\subsection{节省事件和精力 自定义命令}
+	\section{使用box来限制文字的宽度}
+\section{Breaking lines and paragraphs}
+通常情况下，当你写的文字，你并不需要关心自动换行。
+只要输入文本与编辑LaTeX会使其适合线和照顾
+的理由。如果你想开始一个新的段落，结果得到一个换行符
+在输出时，只需插入一个空行，然后再继续你的文字。
+现在，我们将找出如何控制自动换行。首先，我们将看到如何提高
+自动断行。然后，我们将学习指令直接插入休息。
+\subsection{提高断字(Imporving hyphenation)}
+如果你看一下，你会发现在较长的文本，它是优秀的文字是完全有道理的
+LaTeX和如何单词之间的间距被均匀的分布上的线。如果有必要，
+LaTeX会划分的话，并把连字符的行结束时，为了打破中的行
+更好的办法。 LaTeX的很好的算法已经使用连字符连接的词，但它可能发生
+它不能找到一个可以接受的方式，将一个字。前面的例子指出了这一点
+问题：打破了词的缩写，提高产量，但LaTex不知道
+划分。我们将找出如何解决这个问题。
+\subsection{Improving the justification further}
+如今最流行的TeX编译器是pdfTeX，它直接以PDF格式输出。当xxx写了pdfTeX，他
+使用micro-typographic的兼容性扩展了TeX。当我们直接输出pdf时，我们实际上
+是用的pdfLaTeX，并且我们可以使用microtype包来使用它的特性。
+\subsection{Breaking lines manually}
+我们可能会选择结束压倒一切的全自动行。有几个命令
+不同的效果。	
+\subsection{Preventing line breaks}
+命令\textbackslash linebreak有直接的对应：\textbackslash nolinebreak。此命令
+在当前位置防止断行。像它的对手，它带有一个可选的的参数。如果你写\textbackslash nolinebreak[0]，
+则建议不断行。使用1，2，或3使得请求更强大和\textbackslash nolinebreak[4]完全禁止它。
+如果你不提供一个参数,则使用的是后者。已经提到的命令，\textbackslash mbox[文字],
+不仅要禁用断字,也避免了换行的完整文本。	
+
+LaTeX可以在字与字之间的空间进行有意义的断行。符号〜标识词间没有空间断行:
+如果你写Dr. ~Watson, 那么Rr.绝不会出现在行末。
+\subsection{Managing line breaks wisely}
+坏断字的文件仍然可以消失的增长，说明一些明智的断字规则将不会做任何伤害,
+但可能被证明是有用的。但只使用\textbackslash\textbackslash,\textbackslash newline,
+and \textbackslash linebreak 来调整您的文档的最终版本！当你还在编辑你的文字，
+你不需要担心换行。他们仍然在写作过程中可能会改变。难看理由可能有所变动，
+不干预变得更好。另一方面，如果你手动换行，但后来插入文本之前，其结果可能是
+不必要的短行。
+
+所以，不要浪费你的能量格式化而你正在写的文本。	
+\subsection{Exploring the fine details}
+印刷字体约定可能需要注意一些小细节，也有不同的破折号，且一个点周围的空间可能
+会有所不同，这取决于上下文。之后的空间一些字母可能取决于以下，以至于一些字母,
+甚至可能被接合到一个单一的。这种结构被称为连字。让我们来仔细看看在他们。
+\section{Understanding ligatures}
+	\subsection{Choosing the rightdash}
+	\subsection{Setting dots}
+	\subsection{Setting accents}
+\section{Using special characters directly in the editor}
+\section{Truning off full justification}
+\section{Creating ragged-left text}
+\section{Using environments for justification}
+由于具有对应每个声明都有相对应的环境，我们可以在之前的文本中使用\textbackslash
+begin\{centering\}...\textbackslash end\{centering\}。也可以做类似ragged-right
+和ragged-left文本。这里也有一些预定义的环境做类似的事情，但是同时开始一个新的
+段落。
+\subsection{Time for action-centering verses}
+让我们重用fragment of 诗"Annabel Lee"。这次我们将居中所有erses:
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass{article}
+\usepackage{url}
+\begin{document}
+\noindent This is the beginning of a poem
+by Edgar Allan Poe:
+\begin{center}
+	\emph{Annabel Lee}
+\end{center}
+\begin{center}
+	It was many and many a year ago,\\
+	In a kingdom by the sea,\\
+	That a maiden there lived whom you may know\\
+	By the name of Annabel Lee
+\end{center}
+The complete poem can be read on
+\url{http://www.online-literature.com/poe/576/}.
+\end{document}
+\end{lstlisting}
+我们使用\textbackslash开始来避免段落缩进。\textbackslash\{center\}开始了
+居中环境。它开始了一个新段落，留下一些空白to the preceding text。\textbackslash \{center\}
+结束了环境。我们两次使用环境。第二次，我们插入了\textbackslash \textbackslash来
+结束erses。
+
+在center环境结束之后，有一些空白接着，下一个段落began at the left margin。
+
+对应于ragged-right text的环境叫做flushleft，ragged-left的叫做flushright。
+\section{显示引用}
+想象一下你的作品中有其他作者的引用。如果只是简单的插入到文本中的话将会使得难以
+阅读。一种常用的提高可读性的方式是:设置这些文本两边缩进。
+	\subsection{Time for action-quoting a scientist}
+	我们将引用著名物理学家的思想。
+	\begin{lstlisting}[language={[LaTeX]TeX}]
+	\documentclass{article}
+	\begin{document}
+	Niels Bohr said: ``An expert is a person who has made
+	all the mistakes that can be made in a very narrow field.''
+	Albert Einstein said:
+	\begin{quote}
+		Anyone who has never made a mistake has never tried anything new.
+	\end{quote}
+	Errors are inevitable. So, let's be brave trying something new.
+	\end{document}
+	\end{lstlisting}
+首先我们使用了行内引用。产生了一个左引号；这个字符也称作backtick。产生了个右
+引号。我们只是键入两个这样的符号来获得双引号。
+
+然后我们使用quote 环境来显示引用。我们并没有开始一个新的段落，因为引用已经
+设置了缩进。这就是我们在环境中前后不使用空行的原因。
+\section{引用更长的文本}
+当你写短的引用的时候，the quote environment 看起来非常好。然而，当你需要引用的
+文本有好几段的时候，你可能会希望获得与环绕文字相通的缩进格式。The quotation
+environment将会为你解决问题。
+	\subsection{Time for action-quioting TeX's benefits}
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass{article}
+\usepackage{url}
+\begin{document}
+The authors of the CTAN team listed ten good reasons
+for using \TeX. Among them are:
+\begin{quotation}
+	\TeX\ has the best output. What you end with,
+	the symbols on the page, is as useable, and beautiful,
+	as a non-professional can produce.
+	\TeX\ knows typesetting. As those plain text samples
+	show, \TeX's has more sophisticated typographical algorithms
+	such as those for making paragraphs and for hyphenating.
+	\TeX\ is fast. On today's machines \TeX\ is very fast.
+	It is easy on memory and disk space, too.
+	\TeX\ is stable. It is in wide use, with a long history.
+	It has been tested by millions of users, on demanding input.
+	It will never eat your document. Never.
+\end{quotation}
+The original text can be found on
+\url{ http://www.ctan.org/what_is_tex.html}.
+\end{document}
+\end{lstlisting}
+在这里，我们使用了quotation 环境来显示一些段落。就像在正常文本中一样，使用空行
+分割段落。它们使用左缩进，就像在我们的正文中一样。
+
+但是如果我们不希望缩进呢？让我们看看解决方案。
+\subsection{Time for action-spacing between paragraphs instead of indentation}
+我们希望避免段落缩进，相反的 ，我们使用一些垂直空白来分割段落。
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass{article}
+\usepackage{parskip}
+\usepackage{url}
+\begin{document}
+The authors of the CTAN team listed ten good reasons
+for using \TeX. Among them are:
+\TeX\ has the best output. What you end with,
+the symbols on the page, is as useable, and beautiful,
+as a non-professional can produce\ldots
+The original text can be found on
+\url{ http://www.ctan.org/what_is_tex.html}.
+\end{document}
+\end{lstlisting}
+第二行显示了我们加载了parskip包。它的唯一目的是完全消除段落缩进。同时，这个包
+引进了段落之间的skip。但是这个包并不影响quotation 环境的定义-你仍然可以使用
+quote环境。
+为了区别段落，有两种方法可供选择。一种是缩进每个段落的开头；这个LaTeX的默认
+风格。另一种是在段落之间插入垂直空白wihle omitting the indentation，这在那些
+特别窄的列缩进会话费太多width的地方是比较适合的。
+\section{Pop quiz-lines and paragraphs}
+\section{Summary}
+在这一章中，我们学习了一些基本技能:编辑、排列和格式化文本。
+
+特别地，涵盖了:
+
+更改字体的形状和风格
+断行和提高断字
+Controling justification of text
+
+我们了解了基本的LaTeX概念:
+命令和声明，必须参数和可选参数
+定义新命令
+使用环境
+使用包，如何加载和包的选项
+
+需要记住一点是，我们直接在文本中直接使用了格式化命令，你需要在在前言中命令定义
+使用它们以利于将来修改。在你的学习和写作过程中，你可能会知道更多的命令和包可以
+提高你之前写的命令。
+我们学到了常用的技能:
+经可能多地写自己的macros to archieve a logical structure. 收益将会是整个文档
+都变得容易修改。
+Deal with line or page breaking issues at the earliest when you go for your
+final version.
+
+现在既然我们学到了格式化文本的细节,我们就准备好进入下一章处理格式化和布局整个
+页面和文档。
