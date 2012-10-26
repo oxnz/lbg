@@ -1,0 +1,41 @@
+\section{Breaking lines and paragraphs}
+通常情况下，当你写的文字，你并不需要关心自动换行。
+只要输入文本与编辑LaTeX会使其适合线和照顾
+的理由。如果你想开始一个新的段落，结果得到一个换行符
+在输出时，只需插入一个空行，然后再继续你的文字。
+现在，我们将找出如何控制自动换行。首先，我们将看到如何提高
+自动断行。然后，我们将学习指令直接插入休息。
+\subsection{提高断字(Imporving hyphenation)}
+如果你看一下，你会发现在较长的文本，它是优秀的文字是完全有道理的
+LaTeX和如何单词之间的间距被均匀的分布上的线。如果有必要，
+LaTeX会划分的话，并把连字符的行结束时，为了打破中的行
+更好的办法。 LaTeX的很好的算法已经使用连字符连接的词，但它可能发生
+它不能找到一个可以接受的方式，将一个字。前面的例子指出了这一点
+问题：打破了词的缩写，提高产量，但LaTex不知道
+划分。我们将找出如何解决这个问题。
+\subsection{Improving the justification further}
+如今最流行的TeX编译器是pdfTeX，它直接以PDF格式输出。当xxx写了pdfTeX，他
+使用micro-typographic的兼容性扩展了TeX。当我们直接输出pdf时，我们实际上
+是用的pdfLaTeX，并且我们可以使用microtype包来使用它的特性。
+\subsection{Breaking lines manually}
+我们可能会选择结束压倒一切的全自动行。有几个命令
+不同的效果。	
+\subsection{Preventing line breaks}
+命令\textbackslash linebreak有直接的对应：\textbackslash nolinebreak。此命令
+在当前位置防止断行。像它的对手，它带有一个可选的的参数。如果你写\textbackslash nolinebreak[0]，
+则建议不断行。使用1，2，或3使得请求更强大和\textbackslash nolinebreak[4]完全禁止它。
+如果你不提供一个参数,则使用的是后者。已经提到的命令，\textbackslash mbox[文字],
+不仅要禁用断字,也避免了换行的完整文本。	
+
+LaTeX可以在字与字之间的空间进行有意义的断行。符号〜标识词间没有空间断行:
+如果你写Dr. ~Watson, 那么Rr.绝不会出现在行末。
+\subsection{Managing line breaks wisely}
+坏断字的文件仍然可以消失的增长，说明一些明智的断字规则将不会做任何伤害,
+但可能被证明是有用的。但只使用\textbackslash\textbackslash,\textbackslash newline,
+and \textbackslash linebreak 来调整您的文档的最终版本！当你还在编辑你的文字，
+你不需要担心换行。他们仍然在写作过程中可能会改变。难看理由可能有所变动，
+不干预变得更好。另一方面，如果你手动换行，但后来插入文本之前，其结果可能是
+不必要的短行。
+
+所以，不要浪费你的能量格式化而你正在写的文本。	
+

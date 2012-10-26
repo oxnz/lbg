@@ -1,22 +1,33 @@
 \documentclass{book}
-\usepackage{fontspec}
-\setmainfont{WenQuanYi Micro Hei}
-%\usepackage{microtype}
-\usepackage{xcolor}
-\usepackage{listings}
-%	\renewcommand{\chaptername}{第\thechapter章}
+\include{preamble}
+\title{LaTeX入门}
+\author{yunxinyi@gmail.com}
+\date{2012-10-26}
 \begin{document}
-\tableofcontents
-	\include{chapter1}
-	\include{chapter2}
-\chapter{页面设计}
-	\section{调整边框}
-	\section{改变行宽}
-	\section{区间化文档}
-	\section{创建一个内容表格}
-	\section{设计页眉和页脚}
-	\section{控制分页}
-	\section{设置脚注并修改样式}
+	\maketitle
+	\tableofcontents
+	\chapter{LaTeX入门}
+		\include{chapter1/preamble}
+		\include{chapter1/section1}
+		\include{chapter1/section2}
+		\include{chapter1/section3}
+		\include{chapter1/summary}
+	\chapter{字，句，段的格式化}
+		\include{chapter2/preamble}
+		\include{chapter2/section1}
+		\include{chapter2/section2}
+		\include{chapter2/section3}
+		\include{chapter2/section4}
+		\include{chapter2/section5}
+		\include{chapter2/section6}
+		\include{chapter2/section7}
+		\include{chapter2/section8}
+		\include{chapter2/section9}
+		\include{chapter2/summary}
+	\chapter{页面设计}
+		\include{chapter3/preamble}
+		\include{chapter3/section1}
+		\include{chapter3/summary}
 \chapter{创建列表}
 	\section{项目符号列表}
 	\section{数字列表}
@@ -75,5 +86,7 @@
 	\section{处理警告}
 	\section{使用LaTeX在编译期间产生的所有信息}
 \chapter{使用在线资源}
-\chapter{附录}
+\appendix
+\chapter{后记}
+\chapter{参考书目}
 \end{document}

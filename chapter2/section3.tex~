@@ -1,0 +1,41 @@
+\section{格式化文本-字体形状和风格}
+	\subsection{调整字体形状}
+	\textbackslash emph 斜体
+	\textbackslash textit 意大利斜体
+	\textbackslash textbf 粗體
+	\textbackslash textsl slanted
+	\textbackslash textsc small caps
+这些可以组合起来使用，例如 \textbackslash textsc\{\textbackslash textbf\{nested\}\}
+也可以重复使用，例如\textbackslash textbf\{\textbackslash textbf\{nested\}\}
+%又省略一点。。。
+	\subsection{选择字体族}
+	\textbackslash textsf : sans-serif font
+	\textbackslash texttt : typewriter font
+	\textbackslash textrm : Roman text - the default font with serifs.
+\textbackslash textsf\{LaTeX\ resources on the internet\}
+\textbackslash texttt\{http://www.ctan.org\}.
+\textsf{LaTeX\ resources on the internet}
+The best place for downloading LaTeX related software is CTAN.
+Its address is \texttt{http://www.ctan.org}.
+	\subsection{Time for action-switch to sans-serif and to typewriter fonts}
+	\subsection{字体切换}
+	\textbackslash sffamily
+	\textbackslash rmfamily
+	Command		Declaration		Meaning
+	\textbackslash textrm\{\}	\textbackslash rmfamily
+	\textbackslash textsf\{\}
+	\textbackslash texttt\{\}
+	\textbackslash textbf\{\}
+	\textbackslash textmd\{\}
+	\textbackslash textit\{\}
+	\textbackslash textsl\{\}
+	\textbackslash textsc\{\}
+	\textbackslash textup\{\}
+	\textbackslash textnormal\{\}
+	\subsection{切换字体族}
+	\subsection{字体命令和声明的小结}
+	\subsection{划定命令的效果}
+	\subsection{Time for action-exploring grouping by braces}
+	\subsection{Time for action-探索字体大小}
+	\subsection{Using environments}
+	\subsection{Time for action-使用环境来调整字体大小}

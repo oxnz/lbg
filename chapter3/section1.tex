@@ -1,0 +1,58 @@
+\section{定义全局布局}
+我们将写个包含几页的示例文档。我们将在这个文档上练习修改边距，行距，页眉和
+页脚等和其他更多的东西。
+	\subsection{Time for action-写个包含章节的书}
+我们将开始写一本书。首先，我们将选择一个类，更进一步使用一些填充
+文本来试验页面布局。
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass[a4paper,12pt]{book}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\begin{document}
+\chapter{Exploring the page layout}
+In this chapter we will study the layout of pages.
+\section{Some filler text}
+\blindtext
+\section{A lot more filler text}
+More dummy text will follow.
+\subsection{Plenty of filler text}
+\blindtext[10]
+\end{document}
+\end{lstlisting}
+我们选择的文档类型为book。如名字所指示，这个类适合于书一类的文档。书通常是
+两面的，包含章节which usually start at right-hand pages。它们可以有一个前言
+具有一个或多个标题页和一个back matter with bibliography，index等等。book类
+支持所有这些。
+
+我们加载了babel类。这对于非英语typesetting 非常有用。
+
+即使对于英语，这里也有几个选项:
+
+USenglish,american,
+english,UKenglish,british,
+
+canadian,australian,and newzealand.
+显然，一些是相同的,
+
+例如UKenglish和british。
+
+然而，There are differences in hyphenation rules
+
+between USenglish(american,
+english) and UKenglish (british).
+
+现在，我们只需要babel来加载blindtext:这个包被开发用来产生填充文本。它需要
+babel来探测文档语言。我们向babel声明语言为english，意味这American English。
+
+命令\textbackslash chapter产生一个大标题。这个命令总是开始于新的一页。
+
+我们已经了解了\textbackslash section命令.
+它是我们的二级标题，产生一个比
+
+\textbackslash chapter小一点的标题。它自动为每个章节计数。
+
+接着是\textbackslash
+ blindtext，打印一些无意义的文本来填充空间。
+
+最后,we refined the sectioning with a \textbackslash subsection 命令和更多的
+

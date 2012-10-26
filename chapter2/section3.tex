@@ -1,0 +1,87 @@
+\section{格式化文本-字体形状和风格}
+LaTeX的已经做了一些格式。例如，我们已经看到了部分的标题是
+大于普通的文本和大胆的脸。现在，我们将学习如何修改外观
+自己的文字。
+	\subsection{Time for action调整字体形状}
+我们将强调一个重要的词在文本中，我们将看到如何使文字出现
+粗体，斜体或倾斜。我们将弄清楚如何突出词语的一部分，一些文字
+这已经强调：
+\item {创建新文档写入以下内容:}
+	\begin{enumerater}
+		\begin{lstlisting{[LaTeX]TeX}]
+\documentclass{article}
+\begin{document}
+Text can be \emph{emphasized}.
+Besides being \textit{italic} words could be \textbf{bold},
+\textsl{slanted} or typeset in \textsc{Small Caps}.
+Such commands can be \textit{\textbf{nested}}.
+\emph{See how \emph{emphasizing} looks when nested.}
+\end{document}
+
+		\end{lstlisting}
+	\end{enumerater}
+	刚刚发生了什么？
+	首先，我们使用命令\ EMPH，一个字作为参数传递给该命令。
+	这个参数会以斜体字形状，因为这是默认的方式如何LaTeX的排版
+	强调文本。
+
+
+	文本格式的命令通常看起来像\ * {参数}，其中**代表一个
+	BF两个字母的缩写，如粗体，斜体，和SL倾斜。这个论点
+	像我们所看到的将进行相应格式化。该命令后，随后的
+	文字排版，因为它是前命令正是后右大括号
+	结束标记的说法。我们检查出来。
+	我们嵌套的命令\ textit和\ textbf，这使我们能够实现的
+	那些样式和文字的组合都出现了斜体和粗体。
+
+
+	大多数字体命令将显示同样的效果，如果他们被应用两次一样
+	\ textbf {\ textbf {词}}的话会不会变得更大胆。 \ EMPH行为
+	是不同的。我们已经看到，强调文本会显示为斜体，但如果我们用\ EMPH到
+	再一块这段文字，它会改变斜体正常字体。想象一下，一个重要的
+	定理完全以斜体排版，你应该还是有机会突出
+	在这个定理的话。
+	\ EMPH是所谓的语义标记，因为它的含义是指，不仅对
+	文字的外观。
+	%[
+	两次强调，如粗体和斜体标记在同一
+	时间，可能会被认为是有问题的风格。改变
+	明智的和一贯的字体形状。
+	%]
+
+	\subsection{选择字体族}
+	我们的例子中，你在本书中看到的标准字体的字体比较。虽然
+	LaTeX的字体有装饰的外观，这本书的文字字体看起来简单，干净。
+	另一种方式是不同的，在我们的代码例子：每封信都具有相同的宽度。让我们来看看
+	我们如何能够实现在我们的作品。
+	\subsection{Time for action-switching to sans-serif and to typewriter fonts}
+	\textbackslash textsf : sans-serif font
+	\textbackslash texttt : typewriter font
+	\textbackslash textrm : Roman text - the default font with serifs.
+\textbackslash textsf\{LaTeX\ resources on the internet\}
+\textbackslash texttt\{http://www.ctan.org\}.
+\textsf{LaTeX\ resources on the internet}
+The best place for downloading LaTeX related software is CTAN.
+Its address is \texttt{http://www.ctan.org}.
+	\subsection{Time for action-switch to sans-serif and to typewriter fonts}
+	\subsection{字体切换}
+	\textbackslash sffamily
+	\textbackslash rmfamily
+	Command		Declaration		Meaning
+	\textbackslash textrm\{\}	\textbackslash rmfamily
+	\textbackslash textsf\{\}
+	\textbackslash texttt\{\}
+	\textbackslash textbf\{\}
+	\textbackslash textmd\{\}
+	\textbackslash textit\{\}
+	\textbackslash textsl\{\}
+	\textbackslash textsc\{\}
+	\textbackslash textup\{\}
+	\textbackslash textnormal\{\}
+	\subsection{切换字体族}
+	\subsection{字体命令和声明的小结}
+	\subsection{划定命令的效果}
+	\subsection{Time for action-exploring grouping by braces}
+	\subsection{Time for action-探索字体大小}
+	\subsection{Using environments}
+	\subsection{Time for action-使用环境来调整字体大小}

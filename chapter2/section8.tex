@@ -1,0 +1,41 @@
+\section{Truning off full justification}
+	\subsection{Time for action-justifying a paragraph to the left}
+	\subsection{Creating ragged-left text}
+	\subsection{Time for action-centering a title}
+	\subsection{Using environments for justification}
+由于具有对应每个声明都有相对应的环境，我们可以在之前的文本中使用
+\textbackslash begin\{centering\}...\textbackslash end\{centering\}。
+也可以做类似ragged-right和ragged-left文本。这里也有一些预定义的环境
+做类似的事情，但是同时开始一个新的段落。
+	\subsection{Time for action-centering verses}
+让我们重用fragment of 诗"Annabel Lee"。这次我们将居中所有erses:
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass{article}
+\usepackage{url}
+\begin{document}
+\noindent This is the beginning of a poem
+by Edgar Allan Poe:
+\begin{center}
+	\emph{Annabel Lee}
+\end{center}
+\begin{center}
+	It was many and many a year ago,\\
+	In a kingdom by the sea,\\
+	That a maiden there lived whom you may know\\
+	By the name of Annabel Lee
+\end{center}
+The complete poem can be read on
+\url{http://www.online-literature.com/poe/576/}.
+\end{document}
+\end{lstlisting}
+我们使用\textbackslash 开始来避免段落缩进。\textbackslash \{center\}开始了
+居中环境。它开始了一个新段落，留下一些空白to the preceding text。\textbackslash \{center\}
+结束了环境。我们两次使用环境。第二次，我们插入了\textbackslash \textbackslash
+来结束erses。
+
+在center环境结束之后，有一些空白接着，下一个段落began at the left margin。
+
+对应于ragged-right text的环境
+叫做flushleft,
+ragged-left的叫做flushright。
+

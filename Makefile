@@ -1,15 +1,19 @@
-book.pdf: book.tex
-	xelatex $<
+#
+# File:			Makefile
+# Author:		yunxinyi@gmail.com
+# Last Modified:	Fri Oct 26 20:28:53 CST 2012
 
-.PHONY: clean test again
+TEXC:=xelatex
+PDFVIEWER:=evince
+
+book.pdf: book.tex
+	$(TEXC) $<
+	$(TEXC) $<
+
+.PHONY: clean test
 
 clean:
-	rm -rf *.log
-	rm -rf *.dvi
-	rm -rf *.aux
-	rm -rf *.toc
-	rm -rf *.pdf
+	-find -name '*.aux' -exec rm -f {} \;
+	-rm -f *.log *.out *.toc *.pdf
 test: book.pdf
-	evince $<
-again: book.tex
-	xelatex $<
+	$(PDFVIEWER) $<

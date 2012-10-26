@@ -1,0 +1,53 @@
+\section{显示引用}
+想象一下你的作品中有其他作者的引用。如果只是简单的插入到
+文本中的话将会使得难以阅读。一种常用的提高可读性的方式是:
+设置这些文本两边缩进。
+	\subsection{Time for action-quoting a scientist}
+	我们将引用著名物理学家的思想。
+	\begin{lstlisting}[language={[LaTeX]TeX}]
+	\documentclass{article}
+	\begin{document}
+	Niels Bohr said: ``An expert
+	is a person who has made
+	all the mistakes that can be made
+	in a very narrow field.''
+	Albert Einstein said:
+	\begin{quote}
+		Anyone who has never made a mistake
+		has never tried anything new.
+	\end{quote}
+	Errors are inevitable. So,
+	let's be brave trying something new.
+	\end{document}
+	\end{lstlisting}
+首先我们使用了行内引用。产生了一个左引号；这个字符也称作backtick。产生了个右
+引号。我们只是键入两个这样的符号来获得双引号。
+
+然后我们使用quote 环境来显示引用。我们并没有开始一个新的段落，因为引用已经
+设置了缩进。这就是我们在环境中前后不使用空行的原因。
+	\subsection{引用更长的文本}
+当你写短的引用的时候，the quote environment 看起来非常好。然而，当你需要引用的
+文本有好几段的时候，你可能会希望获得与环绕文字相通的缩进格式。The quotation
+environment将会为你解决问题。
+	\subsection{Time for action-quioting TeX's benefits}
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass{article}
+\usepackage{url}
+\begin{document}
+The authors of the CTAN team listed ten good reasons
+for using \TeX. Among them are:
+\begin{quotation}
+	\TeX\ has the best output. What you end with,
+	the symbols on the page,
+	is as useable, and beautiful,
+	as a non-professional can produce.
+	\TeX\ knows typesetting. As those
+	plain text samples
+	show, \TeX's has more sophisticated
+	typographical algorithms
+	such as those for making paragraphs
+	and for hyphenating.
+	\TeX\ is fast. On today's machines
+\end{quotation}
+\end{document}
+\end{lstlisting}

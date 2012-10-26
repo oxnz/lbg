@@ -1,0 +1,92 @@
+\section{理解逻辑格式化}
+在前面的章节中，我们写了一个小例子文件。让我们扩展它使得它变成一个具有
+说明性的例子，以了解典型的文档结构。
+	\subsection{Time for action-给你的文档添加标题}
+我们将使用第一个例子，插入一些命令使其产生一个漂亮的title。
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass[a4paper,11pt]{article}
+\begin{document}
+\title{Example 2}
+\author{My name}
+\date{January 5, 2011}
+\maketitle
+\section{What's this?}
+This is our second document. It contains a
+title and a section with text.
+\end{document}
+\end{lstlisting}
+\begin{itemize}
+	\item 我们的文档使用article类。它将使用a4纸和11号基本字体。
+	\item 标题是"Example 2".
+	\item 你是作者。
+	\item 时间是January 5, 2011
+	\item concerning the content of the document:
+		\begin{itemize}
+			\item 开始与标题。
+			\item 第一section具有标题"What's this?"
+			\item 接下来的文本是"This is our second document."
+		\end{itemize}
+\end{itemize}
+注意，我们并没有设置标题的字体大小；页眉有设置加粗和居中。这类的格式化是LaTeX
+做的，但是你可以告诉LaTeX具体看起来效果如何。
+%[]
+我们并不需要按“保存”按钮。 TEXworks的自动保存
+的文件，如果我们点击排版“按钮。
+	\subsection{探索文档结构}
+让我们看看细节。一个LaTeX文档中并不是孤立的-通常是基于一个
+多功能的模板。这类基本的模板被称为类(class)。它提供了可定制的
+功能，通常是具有特定的目的性。有些类中有书(book),期刊文章
+(journal articles);信件(letter)，演示文档(presentation),海报
+(poster)和其他很多;还有更多的数百个可靠的类可以在互联网存档,
+在你已经安装了TeX Live之后,在您的计算机上也有很多，在这里，我们
+选择了适用于小型文档的文章(article)类别。
+
+第一行用\textbackslash documentclass开始。这个单词之前有反斜杠；这样的单词称为
+命令(command)。我们使用命令制定类(class)和文档属性(document properties):
+title,author和date.
+
+文档的第一部分称为文档的前言(preamble)。我们在这里选择类，指定属性，
+一般地，在这里制作整个文档范围的定义。
+
+\textbackslash begin\{document\}标记了前言的结束和真正文档的开始.\textbackslash end\{document\}标记了文档的结束。所有之后的东西都将被LaTeX忽略。在\textbackslash begin...\textbackslash end之间的这样一段代码，被称作环境(environment)。
+
+在实际的文档中间，我们使用了\textbackslash maketitle来以一种美观的格式输出标题，作者和日期。通过\textbackslash section命令，我们制作了一个标题，
+更大和更大胆的比普通的文本。然后，我们让一些文本跟进。我们写到这里，
+文档环境，将被打印出来。与此相反，所述前导码永远不会
+产生任何输出。
+
+让我们来看看详细的命令。
+	\subsection{理解LaTeX命令}
+	LaTeX命令开始一个反斜杠，或大或小的字母。 LaTeX命令
+	通常以小写字母和一个描述性的方式命名。但也有例外：
+	看到一个反斜杠和一个特殊字符组成的命令。
+	命令可能有参数，在大括号或方括号中。
+
+	调用命令看起来如下：
+	\textbackslash command
+
+	Or:
+
+	\textbackslash \{argument\}
+
+	Or:
+
+	\textbackslash \[optional argument\] \{argument\}
+
+	可能有多个参数，每个人在大括号或括号。在大的争论
+	括号是必需的。如果一个命令需要一个参数被定义为，一种给予。
+	例如，调用\文档类都将是徒劳的，如果我们没有声明一个类名。	
+%[]
+	在方括号中的参数是可选的，他们可能会考虑，但它不是一个
+	必须的。如果没有提供可选参数，该命令将使用一个默认的
+	1。例如，在第1章中的第一个例子，入门用LaTeX，
+我们写\textbackslash documentclass \{article\}。此文件已排版
+与基地的新细明体的字型大小，因为这是类的默认基本字体大小。
+在第二个文件中，我们写道：\textbackslash documentclass \[ A4paper，11pt\]
+\{article\};这样一来，我们替换了默认值与给定值，所以现在
+该文件将被调整为A4纸，使用基本字体大小为11pt。
+
+有命令生成的输出尝试的\ LaTeX和设置属性的命令，
+改变字体或布局。一般来说，根据自己的选择命令的名称
+目的。在本章中，我们将有一个更详细的研究，但首先让我们来看看如何LaTeX的
+把我们输入的是什么。

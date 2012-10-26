@@ -1,0 +1,76 @@
+\section{LaTeX如何读取你的输入}
+在我们继续之前，让我们来看看如何LaTeX的理解你写在编辑器中的东西。
+	\subsection{Time for action-尝试空白、断行和空行的效果}
+	我们将采取的第一个例子中，插入空格和换行。
+	\begin{lstlisting}[language={[LaTeX]TeX}]
+	\documentclass[a4paper,11pt]{article}
+	\begin{document}
+	\title{Example 3}
+	\author{My name}
+	\date{January 5, 2011}
+	\maketitle
+	\section{What's this?}
+	This
+	is
+	our
+	second document.
+	It contains two paragraphs. The first line of a paragraph will be
+	indented, but not when it follows a heading.
+	% Here's a comment.
+	\end{document}
+	\end{lstlisting}
+	2.排版
+	3.看看效果
+	刚刚发生了什么？
+
+	虽然我们已经插入了一些空间之间的距离，在输出的话
+	保持不变。原因是，LaTeX的就像一个空格将多个空格。
+	此外，单个的换行像一个单一的空间具有相同的效果。它不会不管你如何
+	安排你的文本编辑器中使用空格或休息时，输出将保持不变。
+	一个空行表示一个段落符。如空格，多个空行被视为一个。
+
+	简单地说，空间分开的话，空行分隔段落。
+	\subsection{注释源代码}
+	您已经看到，在输出的最后一行，似乎缺少。这是因为％
+	符号引入了一个评论。一切的百分比，直到行结束的迹象
+	LaTeX的将被忽略，并不会被打印出来。这使您可以插入笔记
+	您的文档。它通常用于在模板中告知用户的模板做什么
+	某些地方。还请注意，该行的末尾，通常行为像一个空间，将
+	忽略后一个百分号。
+	%]
+	缓解试验的试验和错误
+	如果你想暂时禁用命令，它可能有利于插入
+	百分号，而不是删除命令。这样一来，你就可以撤消
+	除去\％，轻易改变。
+	%]
+	如果百分号这样的行为，我们应该怎样做，如果我们想在我们写100\％
+	文字吗？让我们来看看如何做到这一点。
+	\subsection{输出特殊符号}
+常见的文本大多含有大写和小写字母,数字和标点符号.这些只要简单的输入即可。
+然而，一些字符是保留作为LaTeX的命令;它们不能被直接使用.我们已经遇到了
+这样的字符，除了百分号,还有花括号等。有LaTeX命令来打印这样的符号。
+	\subsection{Time for action-writing special characters in our text}
+	我们将写一个很短的例子打印出量的美元和百分数，
+	然后我们会尝试更多的符号：	
+	\begin{enumerate}
+		\item {创建一个新的文件，并输入以下几行：}
+			\begin{lstlisting}[language={[LaTeX]TeX}]
+			\documentclass{article}
+			\begin{document}
+			Statement \#1:
+			50\% of \$100 makes \$50.
+			More special symbols are \&, \_, \{ and \}.
+			\end{document}
+			\end{lstlisting}
+		\item {排版并查看输出:}
+	\end{enumerater}
+	刚刚发生了什么？
+
+	通过这样一个特殊的符号前面加一个反斜杠，我们把它变成一个LaTeX命令。
+	此命令打印出该符号的唯一目的。
+%[
+	打印一个反斜杠的命令是\textbackslash textbackslash。如果你想
+	想知道\textbackslash \textbackslash 可能被用于，它被用来作为一个换行符的快捷方式
+	命令。这是一个有点古怪，但换行频频发生，而反斜杠
+	很少需要在输出中，因此已经选择了这条捷径。
+%]
