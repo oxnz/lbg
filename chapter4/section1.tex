@@ -1,0 +1,23 @@
+\section{创建一个bulleted list}
+我们将以最简单的列表开始。它只包含了项目，没有数字。每个item被bullet标记。
+	\subsection{Time for action-listing LaTeX packages}
+	我们将创建一个在前面章节中了解的包:
+	\begin{lstlisting}[language={[LaTeX]TeX}]
+	\documentclass{article}
+	\begin{document}
+	\section*{Useful packages}
+	LaTeX provides several packages for designing the layout:
+	\begin{itemize}
+		\item geometry
+		\item typearea
+		\item fancyhdr
+		\item scrpage2
+		\item setspace
+	\end{itemize}
+	\end{document}
+	\end{lstlisting}
+	没有必要load任何包。我们以一个标题开始接着一些文本。实际列表中，我们
+	使用了一个环境叫做itemize。如我们了解的环境，\textbackslash \{itemize\}
+	开始，\textbackslash \{itemize\}结束。命令 \textbackslash item 告诉
+	LaTeX接着的是一个新的条目。每个条目可以包含任何长度的文本，甚至可以
+	分段。相当的简单，不是吗？

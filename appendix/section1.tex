@@ -1,0 +1,17 @@
+\section{列表}
+\begin{enumerate}
+	\item{概述}
+	\begin{description}
+		\item[enumerate] \hfill
+			有序列表，会有数字前缀。此行使用hfill填充标签与
+			描述之间的空白。
+		\item[itemize] 使用圆点前缀。
+		\item[description] 需要在item后的方括号中指定标签
+	\end{description}
+	\setcounter{enumi}{4}
+	\item{标签和计数器}
+		枚举的列表计数可以通过其计数器来改变。enumerate提供了四个
+		计数器enumi,enumii,enumiii,enumiv对应不同层次的枚举。值的
+		改变可以通过setcounter\{enumi\}\{4\}来实现。则会输出5.
+		对于itemize而言，无需计数。
+\end{enumerate}

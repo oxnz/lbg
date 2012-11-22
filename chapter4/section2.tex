@@ -1,0 +1,51 @@
+\section{列表的嵌套}
+当一个列表变长时，我们可以通过分割是它变得清晰明了。我们只是在列表中创建列表。
+建议使用不同的bullet保持列表的层次清晰。LaTeX会自动这样做。
+	\subsection{Tiem for action-listing packages by topic}
+We shall refine the package list by introducing categories:
+1. Refine the aforementioned highlighted itemize environment of our example
+in the following way:
+	\begin{lstlisting}[language={[LaTeX]TeX}]
+	\begin{itemize}
+		\item Page layout
+			\begin{itemize}
+				\item geometry
+				\item typearea
+			\end{itemize}
+		\item Headers and footers
+			\begin{itemize}
+				\item fancyhdr
+				\item scrpage2
+			\end{itemize}
+		\item Line spacing
+			\begin{itemize}
+				\item setspace
+			\end{itemize}
+	\end{itemize}
+	\end{lstlisting}
+	我们只是简单的在列表中插入了列表。最高可以嵌套四层，否则LaTeX会
+	停止并输出错误信息 !LaTeX Error: Too deeply nested. 如我们所见，
+	第一曾用bullet标记，第二层用英文段横线。第三曾使用星号*，第四层
+	和以后的使用圆点标记。
+
+	深度嵌套的列表着实少见；如此复杂的结构将会很难阅读。在这种情况下，
+	it could be a good idea to revise the text structure or at least
+	spilt the list.
+\section{创建一个编号列表}
+bulleted lists are useful 如果顺序不重要的话。然而，如果顺序重要的话，我们
+可以给出数字创建有序列表。这将使得读者可以轻松跟着我们的思路。
+	\subsection{Tiem for action-writing a step-by-step tutorial}
+	让我们写个how-to并设计页面布局:
+	\begin{lstlisting}[language={[LaTeX]TeX}]
+	\documentclass{article}
+	\begin{document}
+	\begin{enumerate}
+		\item State the paper size by an option to the documentclass
+		\item Determine the margin dimensions using one of these packages
+			\begin{itemize}
+				\item geometry
+				\item typearea
+			\end{itemize}
+		\item Customize header and footer by one of these packages:
+			\begin{itemize}
+

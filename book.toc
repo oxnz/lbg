@@ -1,0 +1,117 @@
+\contentsline {chapter}{\numberline {1}LaTeX入门}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}LaTeX是什么?}{9}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}我们如何受益}{9}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}开源的好处}{9}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}形式与内容的分离}{9}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}可移植性}{9}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}成果的保护}{10}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}对比LaTeX并及其相比传统字处理软件的优缺点}{10}{subsection.1.1.6}
+\contentsline {subsection}{\numberline {1.1.7}挑战是什么?}{10}{subsection.1.1.7}
+\contentsline {section}{\numberline {1.2}安装LaTeX}{11}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}使用网络安装向导安装TeX}{11}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}离线安装TeX Live}{11}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}在其他系统上安装}{11}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}写第一份LaTeX文档}{12}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Time for action-使用TeXworks写我们的第一份文档}{12}{subsection.1.3.1}
+\contentsline {subsubsection}{一展身手 - 检查先进的LaTeX的编辑器}{12}{section*.2}
+\contentsline {section}{\numberline {1.4}总结}{13}{section.1.4}
+\contentsline {chapter}{\numberline {2}字，句，段的格式化}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}节省事件和精力 自定义命令}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Time for action-craeting our first command using it as an abbrevitaion}{17}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Gentle spacing after commands}{17}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Time for action-adding intellingent spacing to command ouput}{17}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}creating more universal commands-using arguments}{17}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Time for action-creating a macro for formating keywords}{17}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Using optional arguments}{17}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}Time for action-marking keywords with optional formating}{17}{subsection.2.1.7}
+\contentsline {section}{\numberline {2.2}使用box来限制文字的宽度}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}Breaking lines and paragraphs}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}提高断字(Imporving hyphenation)}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Improving the justification further}{19}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Breaking lines manually}{19}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Preventing line breaks}{19}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Managing line breaks wisely}{19}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Exploring the fine details}{20}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Understanding ligatures}{20}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Choosing the rightdash}{20}{subsection.2.3.8}
+\contentsline {subsection}{\numberline {2.3.9}Setting dots}{20}{subsection.2.3.9}
+\contentsline {subsection}{\numberline {2.3.10}Time for action-using differently spaced dots}{20}{subsection.2.3.10}
+\contentsline {subsection}{\numberline {2.3.11}Time for action-comparing dots to ellipsis}{20}{subsection.2.3.11}
+\contentsline {subsection}{\numberline {2.3.12}Setting accents}{20}{subsection.2.3.12}
+\contentsline {subsection}{\numberline {2.3.13}Time for action-experimenting with accents}{20}{subsection.2.3.13}
+\contentsline {subsection}{\numberline {2.3.14}Using special characters directly in the editor}{20}{subsection.2.3.14}
+\contentsline {subsection}{\numberline {2.3.15}Time for action-using accents directly}{20}{subsection.2.3.15}
+\contentsline {section}{\numberline {2.4}Truning off full justification}{21}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Time for action-justifying a paragraph to the left}{21}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Creating ragged-left text}{21}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Time for action-centering a title}{21}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Using environments for justification}{21}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Time for action-centering verses}{21}{subsection.2.4.5}
+\contentsline {section}{\numberline {2.5}显示引用}{22}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Time for action-quoting a scientist}{22}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}引用更长的文本}{22}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Time for action-quioting TeX's benefits}{22}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}页面设计}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}定义全局布局}{25}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Time for action-写个包含章节的书}{25}{subsection.3.1.1}
+\contentsline {chapter}{\numberline {4}创建列表}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}项目符号列表}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}数字列表}{27}{section.4.2}
+\contentsline {section}{\numberline {4.3}定义列表}{27}{section.4.3}
+\contentsline {chapter}{\numberline {5}创建表格和插入图片}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}以列的方式排列文本和数据}{29}{section.5.1}
+\contentsline {section}{\numberline {5.2}排版复杂的表格}{29}{section.5.2}
+\contentsline {section}{\numberline {5.3}在文档中插入图片}{29}{section.5.3}
+\contentsline {section}{\numberline {5.4}给表格和图片添加标题}{29}{section.5.4}
+\contentsline {section}{\numberline {5.5}控制图表和表格的布局}{29}{section.5.5}
+\contentsline {chapter}{\numberline {6}交叉引用}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}设置引用标签}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}区间，脚注，列表条目，表格和其他的引用}{31}{section.6.2}
+\contentsline {section}{\numberline {6.3}页码的引用及ranges}{31}{section.6.3}
+\contentsline {section}{\numberline {6.4}使LaTeX对长页面的冗余引用}{31}{section.6.4}
+\contentsline {section}{\numberline {6.5}引用的自动命名}{31}{section.6.5}
+\contentsline {section}{\numberline {6.6}创建到外部文档的引用}{31}{section.6.6}
+\contentsline {chapter}{\numberline {7}内容和引用的列表}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}决定要插入TOC的标题的级别}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}创建并个性化图列表(LOF)和表格列表(LOT)}{33}{section.7.2}
+\contentsline {section}{\numberline {7.3}将随意的文本和命令插入到TOC和其他列表}{33}{section.7.3}
+\contentsline {section}{\numberline {7.4}引用和参考书目}{33}{section.7.4}
+\contentsline {section}{\numberline {7.5}创建目录}{33}{section.7.5}
+\contentsline {section}{\numberline {7.6}修改所有这些列表的标题}{33}{section.7.6}
+\contentsline {chapter}{\numberline {8}编辑数学公式}{35}{chapter.8}
+\contentsline {section}{\numberline {8.1}编辑基本公式}{35}{section.8.1}
+\contentsline {section}{\numberline {8.2}文本中插入公式和公式间插入文本}{35}{section.8.2}
+\contentsline {section}{\numberline {8.3}等式的中间对齐并编号}{35}{section.8.3}
+\contentsline {section}{\numberline {8.4}多列等式的对齐}{35}{section.8.4}
+\contentsline {section}{\numberline {8.5}插入数学符号例如：根号，操作符，希腊字母和箭头}{35}{section.8.5}
+\contentsline {section}{\numberline {8.6}分数}{35}{section.8.6}
+\contentsline {section}{\numberline {8.7}表达式的堆叠}{35}{section.8.7}
+\contentsline {section}{\numberline {8.8}矩阵}{35}{section.8.8}
+\contentsline {chapter}{\numberline {9}字体使用}{37}{chapter.9}
+\contentsline {section}{\numberline {9.1}为整个文档选择其他字体集}{37}{section.9.1}
+\contentsline {section}{\numberline {9.2}为特定的形状加载字体包}{37}{section.9.2}
+\contentsline {section}{\numberline {9.3}如何安装附加字体}{37}{section.9.3}
+\contentsline {section}{\numberline {9.4}多种字体的使用}{37}{section.9.4}
+\contentsline {section}{\numberline {9.5}输入文本的编码和输出的字体}{37}{section.9.5}
+\contentsline {chapter}{\numberline {10}创作大型文档}{39}{chapter.10}
+\contentsline {section}{\numberline {10.1}一个文档分为几个文件}{39}{section.10.1}
+\contentsline {section}{\numberline {10.2}代码的输入和重用}{39}{section.10.2}
+\contentsline {section}{\numberline {10.3}swap out document 设置}{39}{section.10.3}
+\contentsline {section}{\numberline {10.4}编译文档的一部分}{39}{section.10.4}
+\contentsline {section}{\numberline {10.5}创建一个基于其他sub-files的主文档}{39}{section.10.5}
+\contentsline {section}{\numberline {10.6}设计标题页}{39}{section.10.6}
+\contentsline {section}{\numberline {10.7}在标题页使用罗马数字页码}{39}{section.10.7}
+\contentsline {section}{\numberline {10.8}add a back matter without sectioning numbers}{39}{section.10.8}
+\contentsline {chapter}{\numberline {11}进一步美化文档}{41}{chapter.11}
+\contentsline {section}{\numberline {11.1}为目录，图标列表和其他的交叉引用加上超链接}{41}{section.11.1}
+\contentsline {section}{\numberline {11.2}创建书签的导航条}{41}{section.11.2}
+\contentsline {section}{\numberline {11.3}设置标题}{41}{section.11.3}
+\contentsline {section}{\numberline {11.4}使用LaTeX的颜色}{41}{section.11.4}
+\contentsline {chapter}{\numberline {12}故障排除}{43}{chapter.12}
+\contentsline {section}{\numberline {12.1}理解错去信息并修复}{43}{section.12.1}
+\contentsline {section}{\numberline {12.2}处理警告}{43}{section.12.2}
+\contentsline {section}{\numberline {12.3}使用LaTeX在编译期间产生的所有信息}{43}{section.12.3}
+\contentsline {chapter}{\numberline {13}使用在线资源}{45}{chapter.13}
+\contentsline {section}{\numberline {.1}列表}{47}{section..1}
+\contentsline {chapter}{\numberline {A}后记}{49}{appendix.A}
+\contentsline {chapter}{\numberline {B}参考书目}{51}{appendix.B}

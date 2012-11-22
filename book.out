@@ -1,0 +1,116 @@
+\BOOKMARK [0][]{chapter.1}{1 LaTeX入门}{}
+\BOOKMARK [1][]{section.1.1}{1.1 LaTeX是什么?}{chapter.1}
+\BOOKMARK [2][]{subsection.1.1.1}{1.1.1 我们如何受益}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.2}{1.1.2 开源的好处}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.3}{1.1.3 形式与内容的分离}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.4}{1.1.4 可移植性}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.5}{1.1.5 成果的保护}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.6}{1.1.6 对比LaTeX并及其相比传统字处理软件的优缺点}{section.1.1}
+\BOOKMARK [2][]{subsection.1.1.7}{1.1.7 挑战是什么?}{section.1.1}
+\BOOKMARK [1][]{section.1.2}{1.2 安装LaTeX}{chapter.1}
+\BOOKMARK [2][]{subsection.1.2.1}{1.2.1 使用网络安装向导安装TeX}{section.1.2}
+\BOOKMARK [2][]{subsection.1.2.2}{1.2.2 离线安装TeX Live}{section.1.2}
+\BOOKMARK [2][]{subsection.1.2.3}{1.2.3 在其他系统上安装}{section.1.2}
+\BOOKMARK [1][]{section.1.3}{1.3 写第一份LaTeX文档}{chapter.1}
+\BOOKMARK [2][]{subsection.1.3.1}{1.3.1 Time for action-使用TeXworks写我们的第一份文档}{section.1.3}
+\BOOKMARK [1][]{section.1.4}{1.4 总结}{chapter.1}
+\BOOKMARK [0][]{chapter.2}{2 字，句，段的格式化}{}
+\BOOKMARK [1][]{section.2.1}{2.1 节省事件和精力 自定义命令}{chapter.2}
+\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Time for action-craeting our first command using it as an abbrevitaion}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Gentle spacing after commands}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 Time for action-adding intellingent spacing to command ouput}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 creating more universal commands-using arguments}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.5}{2.1.5 Time for action-creating a macro for formating keywords}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.6}{2.1.6 Using optional arguments}{section.2.1}
+\BOOKMARK [2][]{subsection.2.1.7}{2.1.7 Time for action-marking keywords with optional formating}{section.2.1}
+\BOOKMARK [1][]{section.2.2}{2.2 使用box来限制文字的宽度}{chapter.2}
+\BOOKMARK [1][]{section.2.3}{2.3 Breaking lines and paragraphs}{chapter.2}
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 提高断字\(Imporving hyphenation\)}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Improving the justification further}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 Breaking lines manually}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.4}{2.3.4 Preventing line breaks}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.5}{2.3.5 Managing line breaks wisely}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.6}{2.3.6 Exploring the fine details}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.7}{2.3.7 Understanding ligatures}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.8}{2.3.8 Choosing the rightdash}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.9}{2.3.9 Setting dots}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.10}{2.3.10 Time for action-using differently spaced dots}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.11}{2.3.11 Time for action-comparing dots to ellipsis}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.12}{2.3.12 Setting accents}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.13}{2.3.13 Time for action-experimenting with accents}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.14}{2.3.14 Using special characters directly in the editor}{section.2.3}
+\BOOKMARK [2][]{subsection.2.3.15}{2.3.15 Time for action-using accents directly}{section.2.3}
+\BOOKMARK [1][]{section.2.4}{2.4 Truning off full justification}{chapter.2}
+\BOOKMARK [2][]{subsection.2.4.1}{2.4.1 Time for action-justifying a paragraph to the left}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.2}{2.4.2 Creating ragged-left text}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.3}{2.4.3 Time for action-centering a title}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.4}{2.4.4 Using environments for justification}{section.2.4}
+\BOOKMARK [2][]{subsection.2.4.5}{2.4.5 Time for action-centering verses}{section.2.4}
+\BOOKMARK [1][]{section.2.5}{2.5 显示引用}{chapter.2}
+\BOOKMARK [2][]{subsection.2.5.1}{2.5.1 Time for action-quoting a scientist}{section.2.5}
+\BOOKMARK [2][]{subsection.2.5.2}{2.5.2 引用更长的文本}{section.2.5}
+\BOOKMARK [2][]{subsection.2.5.3}{2.5.3 Time for action-quioting TeX's benefits}{section.2.5}
+\BOOKMARK [0][]{chapter.3}{3 页面设计}{}
+\BOOKMARK [1][]{section.3.1}{3.1 定义全局布局}{chapter.3}
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Time for action-写个包含章节的书}{section.3.1}
+\BOOKMARK [0][]{chapter.4}{4 创建列表}{}
+\BOOKMARK [1][]{section.4.1}{4.1 项目符号列表}{chapter.4}
+\BOOKMARK [1][]{section.4.2}{4.2 数字列表}{chapter.4}
+\BOOKMARK [1][]{section.4.3}{4.3 定义列表}{chapter.4}
+\BOOKMARK [0][]{chapter.5}{5 创建表格和插入图片}{}
+\BOOKMARK [1][]{section.5.1}{5.1 以列的方式排列文本和数据}{chapter.5}
+\BOOKMARK [1][]{section.5.2}{5.2 排版复杂的表格}{chapter.5}
+\BOOKMARK [1][]{section.5.3}{5.3 在文档中插入图片}{chapter.5}
+\BOOKMARK [1][]{section.5.4}{5.4 给表格和图片添加标题}{chapter.5}
+\BOOKMARK [1][]{section.5.5}{5.5 控制图表和表格的布局}{chapter.5}
+\BOOKMARK [0][]{chapter.6}{6 交叉引用}{}
+\BOOKMARK [1][]{section.6.1}{6.1 设置引用标签}{chapter.6}
+\BOOKMARK [1][]{section.6.2}{6.2 区间，脚注，列表条目，表格和其他的引用}{chapter.6}
+\BOOKMARK [1][]{section.6.3}{6.3 页码的引用及ranges}{chapter.6}
+\BOOKMARK [1][]{section.6.4}{6.4 使LaTeX对长页面的冗余引用}{chapter.6}
+\BOOKMARK [1][]{section.6.5}{6.5 引用的自动命名}{chapter.6}
+\BOOKMARK [1][]{section.6.6}{6.6 创建到外部文档的引用}{chapter.6}
+\BOOKMARK [0][]{chapter.7}{7 内容和引用的列表}{}
+\BOOKMARK [1][]{section.7.1}{7.1 决定要插入TOC的标题的级别}{chapter.7}
+\BOOKMARK [1][]{section.7.2}{7.2 创建并个性化图列表\(LOF\)和表格列表\(LOT\)}{chapter.7}
+\BOOKMARK [1][]{section.7.3}{7.3 将随意的文本和命令插入到TOC和其他列表}{chapter.7}
+\BOOKMARK [1][]{section.7.4}{7.4 引用和参考书目}{chapter.7}
+\BOOKMARK [1][]{section.7.5}{7.5 创建目录}{chapter.7}
+\BOOKMARK [1][]{section.7.6}{7.6 修改所有这些列表的标题}{chapter.7}
+\BOOKMARK [0][]{chapter.8}{8 编辑数学公式}{}
+\BOOKMARK [1][]{section.8.1}{8.1 编辑基本公式}{chapter.8}
+\BOOKMARK [1][]{section.8.2}{8.2 文本中插入公式和公式间插入文本}{chapter.8}
+\BOOKMARK [1][]{section.8.3}{8.3 等式的中间对齐并编号}{chapter.8}
+\BOOKMARK [1][]{section.8.4}{8.4 多列等式的对齐}{chapter.8}
+\BOOKMARK [1][]{section.8.5}{8.5 插入数学符号例如：根号，操作符，希腊字母和箭头}{chapter.8}
+\BOOKMARK [1][]{section.8.6}{8.6 分数}{chapter.8}
+\BOOKMARK [1][]{section.8.7}{8.7 表达式的堆叠}{chapter.8}
+\BOOKMARK [1][]{section.8.8}{8.8 矩阵}{chapter.8}
+\BOOKMARK [0][]{chapter.9}{9 字体使用}{}
+\BOOKMARK [1][]{section.9.1}{9.1 为整个文档选择其他字体集}{chapter.9}
+\BOOKMARK [1][]{section.9.2}{9.2 为特定的形状加载字体包}{chapter.9}
+\BOOKMARK [1][]{section.9.3}{9.3 如何安装附加字体}{chapter.9}
+\BOOKMARK [1][]{section.9.4}{9.4 多种字体的使用}{chapter.9}
+\BOOKMARK [1][]{section.9.5}{9.5 输入文本的编码和输出的字体}{chapter.9}
+\BOOKMARK [0][]{chapter.10}{10 创作大型文档}{}
+\BOOKMARK [1][]{section.10.1}{10.1 一个文档分为几个文件}{chapter.10}
+\BOOKMARK [1][]{section.10.2}{10.2 代码的输入和重用}{chapter.10}
+\BOOKMARK [1][]{section.10.3}{10.3 swap out document 设置}{chapter.10}
+\BOOKMARK [1][]{section.10.4}{10.4 编译文档的一部分}{chapter.10}
+\BOOKMARK [1][]{section.10.5}{10.5 创建一个基于其他sub-files的主文档}{chapter.10}
+\BOOKMARK [1][]{section.10.6}{10.6 设计标题页}{chapter.10}
+\BOOKMARK [1][]{section.10.7}{10.7 在标题页使用罗马数字页码}{chapter.10}
+\BOOKMARK [1][]{section.10.8}{10.8 add a back matter without sectioning numbers}{chapter.10}
+\BOOKMARK [0][]{chapter.11}{11 进一步美化文档}{}
+\BOOKMARK [1][]{section.11.1}{11.1 为目录，图标列表和其他的交叉引用加上超链接}{chapter.11}
+\BOOKMARK [1][]{section.11.2}{11.2 创建书签的导航条}{chapter.11}
+\BOOKMARK [1][]{section.11.3}{11.3 设置标题}{chapter.11}
+\BOOKMARK [1][]{section.11.4}{11.4 使用LaTeX的颜色}{chapter.11}
+\BOOKMARK [0][]{chapter.12}{12 故障排除}{}
+\BOOKMARK [1][]{section.12.1}{12.1 理解错去信息并修复}{chapter.12}
+\BOOKMARK [1][]{section.12.2}{12.2 处理警告}{chapter.12}
+\BOOKMARK [1][]{section.12.3}{12.3 使用LaTeX在编译期间产生的所有信息}{chapter.12}
+\BOOKMARK [0][]{chapter.13}{13 使用在线资源}{}
+\BOOKMARK [1][]{section..1}{.1 列表}{chapter.13}
+\BOOKMARK [0][]{appendix.A}{A 后记}{}
+\BOOKMARK [0][]{appendix.B}{B 参考书目}{}
